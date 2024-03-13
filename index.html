@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Horiseon</title> <!-- Changed the tile from "website" to "Horiseon" -->
+    <title>Horiseon</title> <!-- Changed the title from "website" to "Horiseon" -->
 </head>
 
 <body>
-    <header class="header"> <!-- Changed from "div" tag to a "header" to make it semantic reasons-->
+    <header class="header"> <!-- Changed from "div" tag to a "header" to give it a semantic meaning-->
         <h1>Hori<span class="seo">seo</span>n</h1>
         <nav> <!-- Changed from "div" tag to a "nav" tag to give it semantic meaning -->
             <ul>
@@ -24,24 +24,24 @@
             </ul>
         </nav>
     </header>
-    <!-- <div class="hero"></div> commented this line of markup because I moved the image reference from the css file to the html file. It is assigned the same class for the same styling -->
-    <img src="./assets/images/digital-marketing-meeting.jpg" alt="A background image depicting 3 office professional from the Marketing Department of Horiseon" class="hero">
+    <!-- <div class="hero"></div> commented this line of markup because I moved the image reference from the css file to this html file. It is assigned the same class for the same styling -->
+    <img src="./assets/images/digital-marketing-meeting.jpg" class="hero" alt="A background image depicting 3 office professional from the Marketing Department of Horiseon" class="hero">
     <main class="content"> <!-- Renamed this tag from div to main to give it semantic meaning-->
-        <section class="search-engine-optimization"> <!-- Renamed from div to section to carry a semantic meaning.-->
+        <section class="offerings"> <!-- Renamed from div to section to carry a semantic meaning. Changed from id selector to class and renamed from "search-engine-optimization" to offerings  to consolidate CSS. -->
             <img src="./assets/images/search-engine-optimization.jpg" alt="An image with a laptop, a cup of coffee, pens in a cup, and book with images in its front cover depicting Horiseon search engin enhancement capabilities. All objects in a table top" class="float-left" /> <!--Added alt tag-->
             <h2>Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
         </section>
-        <section id="online-reputation-management" class="online-reputation-management" > <!-- Renamed from div to section to carry a semantic meaning.-->
+        <section class="offerings" class="online-reputation-management" > <!-- Renamed from div to section to carry a semantic meaning.Changed from id selector to class and renamed from "online-reputation-management" to offerings  to consolidate CSS.-->
             <img src="./assets/images/online-reputation-management.jpg" class="float-right" alt="An image depicting a person looking up a companies reputation to convey how Horiseon can help you manage your online reputation "/> <!--Added alt tag-->
             <h2>Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
         </section>
-        <section id="social-media-marketing" class="social-media-marketing"> <!-- Renamed from div to section to carry a semantic meaning -->
+        <section class="offerings" class="social-media-marketing"> <!-- Renamed from div to section to carry a semantic meaning. Changed from id selector to class and renamed from "social-media-marketing"  to offerings  to consolidate CSS.-->
             <img src="./assets/images/social-media-marketing.jpg" class="float-left" alt="An image depicting the names of some popular social media impact on your marketing strategy and channels."/> <!--Added alt tag-->
             <h2>Social Media Marketing</h2>
             <p>
@@ -50,21 +50,21 @@
         </section>
     </main>
     <aside class="benefits">
-        <section class="benefit-lead"> <!-- Renamed from div to section-->
+        <section class="benefits-aside"> <!-- Renamed from div to section. Changed class to "benefits-aside to consolidate css.-->
             <h3>Lead Generation</h3>
             <img src="./assets/images/lead-generation.png" alt="An image of gears on top of a funnel generating a dollar symbol to convey the meaning of generation of leads and converting the leads to actual sales" />
             <p>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
             </p>
         </section>
-        <section class="benefit-brand"> <!-- Renamed from div to section-->
+        <section class="benefits-aside"> <!-- Renamed from div to section. Changed class to "benefits-aside to consolidate css."-->
             <h3>Brand Awareness</h3>
             <img src="./assets/images/brand-awareness.png" alt="An image of a person with light bulb head and outwardly radiating thought to depict awareness and brand recognition." />
             <p>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
             </p>
         </section>
-        <section class="benefit-cost"> <!-- Renamed from div to section-->
+        <section class="benefits-aside"> <!-- Renamed from div to section. Changed class to "benefits-aside to consolidate css.-->
             <h3>Cost Management</h3>
             <img src="./assets/images/cost-management.png" alt="An image of a gear and dollar signs surrounding it to depict how the increase in search ranking decreases advertising cost"/>
             <p>
